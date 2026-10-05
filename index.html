@@ -2,26 +2,13 @@
 <html lang="en">
 <head>
   <meta name="google-site-verification" content="gFTkZlTg0o-4rp_t9pMfo-q17IBievaVkwDps7hn7Z8" />
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2086456978511220');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Marrakchis — Handmade Moroccan Cotton Towels</title>
+<meta name="description" content="The Marrakchis — handmade Moroccan cotton towels, handwoven in Marrakech. Lightweight, absorbent, beautiful. Free US shipping on every order.">
+<meta property="og:title" content="The Marrakchis — Handmade Moroccan Cotton Towels">
+<meta property="og:description" content="Hand-loomed in Marrakech. Free US shipping on every order.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -309,6 +296,28 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
   .footer-links a:hover { color: var(--ochre); }
   footer small { font-size: 0.68rem; color: rgba(245,239,224,0.28); letter-spacing: 0.06em; }
 
+  /* POLICY & FAQ */
+  .policy-section { padding: 72px 40px; max-width: 760px; margin: 0 auto; text-align: center; }
+  .policy-section h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); color: var(--brown); font-weight: 500; margin-bottom: 8px; }
+  .policy-section h2 em { color: var(--clay); font-style: italic; }
+  .policy-section .about-body { text-align: left; }
+  .policy-section .about-body p { margin-bottom: 14px; }
+  .policy-section .about-body strong { color: var(--brown); font-weight: 600; }
+  .faq-item {
+    text-align: left; background: var(--white);
+    border: 1px solid rgba(196,112,58,0.15); border-radius: 2px;
+    margin-bottom: 12px;
+  }
+  .faq-item summary {
+    cursor: pointer; padding: 16px 20px; font-weight: 500; color: var(--brown);
+    font-size: 0.95rem; list-style: none;
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; color: var(--clay); font-size: 1.2rem; font-weight: 300; flex-shrink: 0; }
+  .faq-item[open] summary::after { content: '\2013'; }
+  .faq-item p { padding: 0 20px 18px; font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 0 24px; }
@@ -387,6 +396,7 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
     <li><a href="#collection">Collection</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="https://themarrakchis.etsy.com" target="_blank" class="nav-cta">Shop on Etsy</a></li>
   </ul>
   <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -429,12 +439,12 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
     <div class="section-divider"></div>
   </div>
 
-  <!-- TIER $36.67 -->
+  <!-- TIER $37 -->
   <div class="price-tier" id="tier-3912">
     <div class="tier-header">
       <div class="tier-prices">
-        <span class="tier-price-now">$36.67</span>
-        <span class="tier-price-was">$48.90</span>
+        <span class="tier-price-now">$37</span>
+        <span class="tier-price-was">$49</span>
       </div>
       <span class="tier-badge">25% Off</span>
       <div class="tier-rule"></div>
@@ -442,12 +452,12 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
     <div class="products-grid" id="grid-3912"></div>
   </div>
 
-  <!-- TIER $38.02 -->
+  <!-- TIER $38 -->
   <div class="price-tier" id="tier-4056">
     <div class="tier-header">
       <div class="tier-prices">
-        <span class="tier-price-now">$38.02</span>
-        <span class="tier-price-was">$50.70</span>
+        <span class="tier-price-now">$38</span>
+        <span class="tier-price-was">$51</span>
       </div>
       <span class="tier-badge">25% Off</span>
       <div class="tier-rule"></div>
@@ -455,12 +465,12 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
     <div class="products-grid" id="grid-4056"></div>
   </div>
 
-  <!-- TIER $39.52 -->
+  <!-- TIER $40 -->
   <div class="price-tier" id="tier-4216">
     <div class="tier-header">
       <div class="tier-prices">
-        <span class="tier-price-now">$39.52</span>
-        <span class="tier-price-was">$52.70</span>
+        <span class="tier-price-now">$40</span>
+        <span class="tier-price-was">$53</span>
       </div>
       <span class="tier-badge">25% Off</span>
       <div class="tier-rule"></div>
@@ -468,12 +478,12 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
     <div class="products-grid" id="grid-4216"></div>
   </div>
 
-  <!-- TIER $41.89 -->
+  <!-- TIER $42 -->
   <div class="price-tier" id="tier-4469">
     <div class="tier-header">
       <div class="tier-prices">
-        <span class="tier-price-now">$41.89 </span>
-        <span class="tier-price-was">$55.86</span>
+        <span class="tier-price-now">$42</span>
+        <span class="tier-price-was">$56</span>
       </div>
       <span class="tier-badge">25% Off</span>
       <div class="tier-rule"></div>
@@ -554,6 +564,51 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
   <a href="https://themarrakchis.etsy.com" target="_blank" class="btn-primary">Shop the Full Collection →</a>
 </section>
 
+<!-- SHIPPING & RETURNS -->
+<section class="policy-section" id="shipping">
+  <p class="section-eyebrow" style="margin-bottom:12px;">Good To Know</p>
+  <h2>Shipping <em>&amp;</em> Returns</h2>
+  <div class="about-divider"></div>
+  <div class="about-body">
+    <p><strong>Free US shipping, always.</strong> Every order ships free within the United States — no minimums, no surprises at checkout.</p>
+    <p><strong>Ships from the US.</strong> Your towels ship from our US location, not from Morocco — so no customs, no long international waits.</p>
+    <p><strong>Processing &amp; delivery.</strong> Orders ship within 2–3 business days and arrive 3–7 business days after that, via USPS or UPS with tracking.</p>
+    <p><strong>Returns.</strong> Unused towels in original condition can be returned within 30 days of delivery for a full refund. Just email us first at hello@themarrakchis.com so we can help.</p>
+    <p><strong>Something wrong with your order?</strong> Email us at hello@themarrakchis.com with your order details and a photo — we'll make it right with a replacement or refund.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="policy-section" id="faq" style="padding-top:0;">
+  <p class="section-eyebrow" style="margin-bottom:12px;">Questions</p>
+  <h2>Frequently <em>asked</em></h2>
+  <div class="about-divider"></div>
+  <details class="faq-item" open>
+    <summary>What are the towels made of?</summary>
+    <p>100% premium cotton, hand-loomed by artisans in Marrakech, Morocco. No machines, no shortcuts.</p>
+  </details>
+  <details class="faq-item">
+    <summary>What size are they?</summary>
+    <p>Each towel measures approximately 70 × 33 inches — generous enough for the beach, the bath, or as a throw.</p>
+  </details>
+  <details class="faq-item">
+    <summary>How do I wash them?</summary>
+    <p>Machine wash cold on a gentle cycle, tumble dry low. They get softer with every wash.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Where does my order ship from?</summary>
+    <p>From within the US, with free shipping on every order. No international delays or customs fees.</p>
+  </details>
+  <details class="faq-item">
+    <summary>Can I use it for more than the beach?</summary>
+    <p>Absolutely — bath towel, spa wrap, picnic blanket, baby blanket, sofa throw, travel blanket. One towel, endless uses.</p>
+  </details>
+  <details class="faq-item">
+    <summary>What's your return policy?</summary>
+    <p>30-day returns on unused items in original condition. If anything arrives damaged or wrong, we'll replace it or refund you — just send us a photo at hello@themarrakchis.com.</p>
+  </details>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">The Marrakchis</div>
@@ -561,9 +616,11 @@ src="https://www.facebook.com/tr?id=2086456978511220&ev=PageView&noscript=1"
     <a href="#collection">Collection</a>
     <a href="#reviews">Reviews</a>
     <a href="#about">About</a>
+    <a href="#shipping">Shipping &amp; Returns</a>
+    <a href="#faq">FAQ</a>
     <a href="https://themarrakchis.etsy.com" target="_blank">Etsy Shop</a>
   </div>
-  <small>&copy; 2025 The Marrakchis · Handmade in Marrakech, Morocco</small>
+  <small>&copy; 2026 The Marrakchis · Handmade in Marrakech, Morocco</small>
 </footer>
 
 <script>
